@@ -6,7 +6,10 @@ import { Provider } from 'react-redux';
 
 const App = () => {
   return (
-   <Provider store={appStore} > <Body/> </Provider>
+  
+      <Provider store={appStore} > <Body /> </Provider>
+
+   
   );
 };
 

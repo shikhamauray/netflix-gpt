@@ -3,9 +3,8 @@ import Header from './Header';
 import {validateSignIn} from '../utils/validate';
 import { Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../utils/firebase'; // adjust the path if needed
-
-
+import { auth } from '../utils/firebase'; 
+import { BG_IMG } from '../utils/constant';
 
 const Login = () => {
 
@@ -47,7 +46,7 @@ const Login = () => {
     <div className="h-screen w-full text-white" >
       <Header/>
    
-  <img src="https://assets.nflxext.com/ffe/siteui/vlv3/fa7be975-efc3-48c6-8188-f07fdd1aa476/web/IN-en-20250428-TRIFECTA-perspective_e045264e-b4d4-4a6f-b2cc-f95e3344a332_large.jpg"
+  <img src={ BG_IMG}
     alt="bg-img"
     className="absolute top-0 left-0 w-full h-full object-cover -z-10"/>
 
