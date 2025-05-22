@@ -1,5 +1,8 @@
 # Netflix GPT
 
+Memoization(api is calling again and again when we change the page )
+
+
 - Create Vite 
 - Configured TailwindCSS 
 - Header

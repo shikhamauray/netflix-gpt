@@ -4,7 +4,7 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNjlhMmZhNWVmYTY2NzQxNTZlYjZkNzcwMjBkZDJjYSIsIm5iZiI6MTc0NzY1ODY0MS44NzMsInN1YiI6IjY4MmIyNzkxMmQ4NDFkNmE2MTJmNzRiNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9EW80MaPOma00O25edR9bVQtEZilMLzOphxpB-gw5hw'
+    Authorization: 'Bearer' + import.meta.env.VITE_TMDB_KEY ,
   }
 };
 
@@ -14,5 +14,7 @@ export const BG_IMG = "https://assets.nflxext.com/ffe/siteui/vlv3/fa7be975-efc3-
 
 export const SUPPORTED_LANGUAGE = [{identifier:"en",name:"English" },{identifier:"hindi",name:"Hindi" },{identifier:"spanish",name:"Spanish" }]
 
-export const OPEANAI_KEY ="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";
+export const OPEANAI_KEY = import.meta.env.VITE_OPEANAI_KEY ;
+
+
 
